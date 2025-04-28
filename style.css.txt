@@ -1,0 +1,141 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0; padding: 0;
+  background: #f5f5f5;
+}
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.logo {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 24px;
+  color: #d9534f;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 18px;
+  color: #0275d8;
+  margin-bottom: 20px;
+}
+.price {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.badge {
+  font-size: 14px;
+  color: #5cb85c;
+  margin-bottom: 20px;
+}
+.button.primary {
+  background: #5cb85c;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.trust {
+  font-size: 14px;
+  color: #666;
+  margin: 20px 0;
+}
+
+.services, .testimonials, .faq {
+  margin: 30px 0;
+  text-align: left;
+}
+.services h3, .testimonials h3, .faq h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.card {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1 1 140px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.card .icon {
+  font-size: 24px;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.testimonial {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+.testimonial p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.testimonial footer {
+  text-align: right;
+  font-size: 12px;
+  color: #777;
+}
+
+.accordion details {
+  margin: 8px 0;
+}
+.accordion summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+.accordion p {
+  margin: 5px 0 0 15px;
+}
+
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.sticky-cta .cta {
+  background: #d9534f;
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .card {
+    flex: 1 1 100%;
+  }
+}

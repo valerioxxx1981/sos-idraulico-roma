@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOS Idraulico Roma – Emergenza Immediata</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="SOS Idraulico Roma" class="logo">
+    <h1>🚨 SOS Idraulico Roma</h1>
+    <h2>Emergenza? Arriviamo in 60 minuti!</h2>
+    <p class="price">Solo <strong>45€</strong> per chiamata e diagnosi</p>
+    <p class="badge">💯 Garanzia intervento entro 2h o rimborso</p>
+    <a href="#" class="button primary">Prenota Subito</a>
+    <p class="trust">🔒 Pagamento sicuro con Stripe – Tel. 334 4345567</p>
+
+    <section class="services">
+      <h3>Servizi offerti</h3>
+      <div class="cards">
+        <div class="card"><span class="icon">💧</span><p>Riparazione perdite d'acqua</p></div>
+        <div class="card"><span class="icon">🔧</span><p>Sostituzione rubinetti</p></div>
+        <div class="card"><span class="icon">🚰</span><p>Disotturazione scarichi</p></div>
+        <div class="card"><span class="icon">🛠️</span><p>Montaggio sanitari</p></div>
+        <div class="card"><span class="icon">⚡</span><p>Interventi rapidi H24</p></div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h3>Recensioni</h3>
+      <div class="testimonial-list">
+        <div class="testimonial"><p>⭐⭐⭐⭐⭐</p><p>"Intervento veloce e professionale."</p><footer>- Luca R.</footer></div>
+        <div class="testimonial"><p>⭐⭐⭐⭐⭐</p><p>"Mi hanno salvato il weekend!"</p><footer>- Maria S.</footer></div>
+        <div class="testimonial"><p>⭐⭐⭐⭐⭐</p><p>"Chiamata semplice, tecnico top."</p><footer>- Paolo G.</footer></div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h3>FAQ</h3>
+      <div class="accordion">
+        <details><summary>Quanto costa?</summary><p>Solo 45€ per chiamata e diagnosi. Scalpato se accetti il preventivo.</p></details>
+        <details><summary>Tempi di arrivo?</summary><p>Entro 60 minuti dalla conferma.</p></details>
+        <details><summary>Zone coperte?</summary><p>Tutta Roma città e provincia.</p></details>
+      </div>
+    </section>
+  </div>
+
+  <div class="sticky-cta">
+    <a href="#" class="button cta">Prenota Ora a 45€</a>
+  </div>
+</body>
+</html>
