@@ -4,18 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOS Idraulico Roma – Emergenza Immediata</title>
+  
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-  <!-- Swiper.js CSS -->
+  <!-- Font Awesome (sostituisci YOUR_KIT_ID con il tuo) -->
+  <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
+  <!-- Swiper.js CSS per il carousel recensioni -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  
+  <!-- Link al CSS esterno -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- HERO SECTION -->
   <header class="hero">
     <div class="overlay"></div>
     <img src="logo.png" alt="SOS Idraulico Roma" class="logo">
     <h1>🚨 SOS Idraulico Roma</h1>
     <p class="subtitle">Emergenza? Interveniamo in <strong>60 minuti</strong>!</p>
+    <p class="price">Solo <strong>45€</strong> per chiamata e diagnosi</p>
     <div class="buttons">
       <a href="#" class="btn btn-primary">Paga e Prenota Ora</a>
       <a href="tel:3344345567" class="btn btn-outline"><i class="fas fa-phone-alt"></i> Chiama Ora</a>
@@ -23,17 +31,25 @@
     <p class="microcopy">Pagamento sicuro via Stripe • Carta, Apple Pay, Google Pay</p>
   </header>
 
-  <section class="container services">
-    <h2>Servizi inclusi</h2>
+  <!-- TRUST BADGES -->
+  <section class="trust-section">
+    <div class="badge"><i class="fas fa-shield-alt"></i> Garanzia entro 2h o rimborso</div>
+    <div class="badge"><i class="fas fa-star"></i> 5.0/5 su Google</div>
+  </section>
+
+  <!-- SERVIZI -->
+  <section class="services container">
+    <h2>Servizi inclusi nei 45€</h2>
     <div class="cards">
-      <div class="card"><svg><!--svg water--></svg><p>Riparazione perdite</p></div>
-      <div class="card"><svg><!--svg wrench--></svg><p>Sostituzione rubinetti</p></div>
-      <div class="card"><svg><!--svg drain--></svg><p>Disotturazione scarichi</p></div>
-      <div class="card"><svg><!--svg shower--></svg><p>Montaggio sanitari</p></div>
+      <div class="card"><i class="fas fa-water"></i><p>Riparazione perdite</p></div>
+      <div class="card"><i class="fas fa-wrench"></i><p>Sostituzione rubinetti</p></div>
+      <div class="card"><i class="fas fa-toilet-paper"></i><p>Disotturazione scarichi</p></div>
+      <div class="card"><i class="fas fa-bath"></i><p>Montaggio sanitari</p></div>
     </div>
   </section>
 
-  <section class="container how-it-works">
+  <!-- COME FUNZIONA -->
+  <section class="how-it-works container">
     <h2>Come Funziona</h2>
     <div class="steps">
       <div><i class="far fa-clock"></i><p>Prenota in 30”</p></div>
@@ -42,7 +58,8 @@
     </div>
   </section>
 
-  <section class="container testimonials">
+  <!-- TESTIMONIANZE -->
+  <section class="testimonials container">
     <h2>Cosa Dicono di Noi</h2>
     <div class="swiper-container">
       <div class="swiper-wrapper">
@@ -50,12 +67,12 @@
         <div class="swiper-slide"><p>“Prezzo chiaro, zero sorprese.”</p><footer>- Maria S.</footer></div>
         <div class="swiper-slide"><p>“Tecnico gentilissimo e veloce.”</p><footer>- Paolo G.</footer></div>
       </div>
-      <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
     </div>
   </section>
 
-  <section class="container faq">
+  <!-- FAQ -->
+  <section class="faq container">
     <h2>Domande Frequenti</h2>
     <div class="accordion">
       <details><summary>Quanto costa?</summary><p>Solo 45€ per chiamata e diagnosi.</p></details>
@@ -64,6 +81,7 @@
     </div>
   </section>
 
+  <!-- STICKY CTA -->
   <div class="sticky-cta">
     <a href="#" class="btn btn-primary">Prenota Ora • 45€</a>
   </div>
