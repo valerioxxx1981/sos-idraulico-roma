@@ -1,141 +1,61 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0; padding: 0;
-  background: #f5f5f5;
-}
-.container {
-  max-width: 480px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: center;
-}
-.logo {
-  max-width: 120px;
-  margin-bottom: 20px;
-}
-h1 {
-  font-size: 24px;
-  color: #d9534f;
-  margin-bottom: 10px;
-}
-h2 {
-  font-size: 18px;
-  color: #0275d8;
-  margin-bottom: 20px;
-}
-.price {
-  font-size: 20px;
-  margin: 10px 0;
-}
-.badge {
-  font-size: 14px;
-  color: #5cb85c;
-  margin-bottom: 20px;
-}
-.button.primary {
-  background: #5cb85c;
-  color: #fff;
-  padding: 12px 24px;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 5px;
-}
-.trust {
-  font-size: 14px;
-  color: #666;
-  margin: 20px 0;
-}
+/* Base */
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Open Sans',sans-serif;background:#f5f5f5;color:#333}
 
-.services, .testimonials, .faq {
-  margin: 30px 0;
-  text-align: left;
+/* Hero */
+.hero{position:relative;text-align:center;color:#fff;
+  background:url('hero-bg.jpg') center/cover no-repeat;height:100vh;display:flex;
+  flex-direction:column;justify-content:center;padding:0 20px;
 }
-.services h3, .testimonials h3, .faq h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
-.card {
-  background: #f9f9f9;
-  padding: 10px;
-  border-radius: 5px;
-  flex: 1 1 140px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.card .icon {
-  font-size: 24px;
-}
+.hero .overlay{position:absolute;inset:0;background:rgba(0,0,0,0.6)}
+.hero .logo{position:relative;width:120px;margin:0 auto 20px}
+.hero h1{position:relative;font-family:'Montserrat',sans-serif;font-size:2.5rem}
+.hero .subtitle{position:relative;font-size:1.1rem;margin:10px 0}
+.hero .buttons{position:relative;margin:20px 0;display:flex;gap:10px;justify-content:center}
+.btn{padding:12px 24px;border-radius:5px;display:inline-block;font-weight:700;text-decoration:none;transition:background .3s}
+.btn-primary{background:#28a745;color:#fff}
+.btn-primary:hover{background:#218838}
+.btn-outline{background:transparent;border:2px solid #fff;color:#fff}
+.btn-outline:hover{background:rgba(255,255,255,0.2)}
+.microcopy{position:relative;font-size:.9rem;color:#ddd;margin-top:10px}
 
-.testimonial-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.testimonial {
-  background: #f9f9f9;
-  padding: 10px;
-  border-radius: 5px;
-}
-.testimonial p {
-  margin: 5px 0;
-  font-size: 14px;
-}
-.testimonial footer {
-  text-align: right;
-  font-size: 12px;
-  color: #777;
-}
+/* Services */
+.container{max-width:480px;margin:40px auto;padding:0 20px}
+.services h2{font-family:'Montserrat',sans-serif;font-size:1.5rem;margin-bottom:20px;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.card{background:#fff;display:flex;align-items:center;gap:10px;padding:15px;border-radius:8px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);transition:transform .3s}
+.card:hover{transform:translateY(-5px)}
+.card i{font-size:1.5rem;color:#0275d8}
+.card p{font-size:.95rem}
 
-.accordion details {
-  margin: 8px 0;
-}
-.accordion summary {
-  cursor: pointer;
-  font-weight: bold;
-}
-.accordion p {
-  margin: 5px 0 0 15px;
-}
+/* How it works */
+.how-it-works h2{text-align:center;font-family:'Montserrat',sans-serif;font-size:1.5rem;margin-bottom:20px}
+.steps{display:flex;justify-content:space-around;text-align:center;margin-bottom:40px}
+.steps i{font-size:2rem;color:#d9534f;margin-bottom:8px}
 
-.sticky-cta {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: white;
-  padding: 10px;
-  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
-  text-align: center;
-}
-.sticky-cta .cta {
-  background: #d9534f;
-  color: #fff;
-  padding: 12px 20px;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 5px;
-}
+/* Testimonials */
+.testimonials h2{text-align:center;font-family:'Montserrat',sans-serif;font-size:1.5rem;margin-bottom:20px}
+.swiper-container{width:100%;height:100px}
+.swiper-slide{display:flex;flex-direction:column;justify-content:center;background:#fff;padding:10px;border-radius:8px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);text-align:center}
+.swiper-slide p{font-size:.95rem}
+.swiper-slide footer{font-size:.85rem;color:#777;margin-top:8px}
 
-@media (max-width: 480px) {
-  .container {
-    padding: 15px;
-  }
-  h1 {
-    font-size: 20px;
-  }
-  h2 {
-    font-size: 16px;
-  }
-  .card {
-    flex: 1 1 100%;
-  }
+/* FAQ */
+.faq h2{text-align:center;font-family:'Montserrat',sans-serif;font-size:1.5rem;margin-bottom:20px}
+.accordion details{background:#fff;margin:8px 0;padding:15px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+.accordion summary{cursor:pointer;font-weight:700;font-size:.95rem}
+.accordion p{font-size:.9rem;padding-left:10px;margin-top:5px}
+
+/* Sticky CTA */
+.sticky-cta{position:fixed;bottom:0;left:0;width:100%;background:#fff;padding:10px 0;box-shadow:0 -3px 6px rgba(0,0,0,0.1);
+  text-align:center}
+.sticky-cta .btn-primary{width:90%;}
+
+/* Responsive */
+@media(max-width:480px){
+  .cards{grid-template-columns:1fr}
+  .hero h1{font-size:2rem}
+  .hero{height:auto;padding:60px 20px}
 }
